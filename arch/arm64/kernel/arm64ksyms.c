@@ -26,7 +26,6 @@
 #include <linux/syscalls.h>
 #include <linux/uaccess.h>
 #include <linux/io.h>
-#include <linux/arm-smccc.h>
 #include <linux/kprobes.h>
 
 #include <asm/cacheflush.h>
@@ -75,10 +74,6 @@ EXPORT_SYMBOL(test_and_change_bit);
 EXPORT_SYMBOL(_mcount);
 NOKPROBE_SYMBOL(_mcount);
 #endif
-
-	/* arm-smccc */
-EXPORT_SYMBOL(__arm_smccc_smc);
-EXPORT_SYMBOL(__arm_smccc_hvc);
 
 	/* caching functions */
 EXPORT_SYMBOL_GPL(__dma_inv_area);
