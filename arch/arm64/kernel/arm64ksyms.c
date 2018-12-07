@@ -32,14 +32,6 @@
 	/* physical memory */
 EXPORT_SYMBOL(memstart_addr);
 
-	/* atomic bitops */
-EXPORT_SYMBOL(set_bit);
-EXPORT_SYMBOL(test_and_set_bit);
-EXPORT_SYMBOL(clear_bit);
-EXPORT_SYMBOL(test_and_clear_bit);
-EXPORT_SYMBOL(change_bit);
-EXPORT_SYMBOL(test_and_change_bit);
-
 	/* caching functions */
 EXPORT_SYMBOL_GPL(__dma_inv_area);
 EXPORT_SYMBOL_GPL(__dma_clean_area);
